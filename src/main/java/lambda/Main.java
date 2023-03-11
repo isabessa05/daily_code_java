@@ -1,4 +1,4 @@
-package LambdaExpressionsIntroduction;
+package lambda;
 
 import java.util.*;
 
