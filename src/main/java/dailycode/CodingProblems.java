@@ -99,5 +99,101 @@ public class CodingProblems {
         System.out.println(charMap); // print the hash map
         return charMap;
     }
+/**  TODO arrays
+ *  Write a Java program to find the second largest element in an array.
 
+ Write a Java program to find the sum of all the elements in an array.
+
+ Write a Java program to find the maximum element in an array.
+
+ Write a Java program to find the minimum element in an array.
+
+ Write a Java program to reverse an array.
+
+ Write a Java program to find the common elements between two arrays.
+
+ Write a Java program to merge two sorted arrays into a single sorted array.
+
+ Write a Java program to remove duplicate elements from an array.
+
+ Write a Java program to find the frequency of each element in an array.
+
+ Write a Java program to shift the elements of an array to the left by n positions.
+
+ Write a Java program to rotate the elements of an array to the right by n positions.
+
+ Write a Java program to find the largest sum of contiguous subarray within a one-dimensional array.
+
+ Write a Java program to find the intersection of two arrays.
+
+ Write a Java program to find the difference between two arrays.
+
+ Write a Java program to find the kth largest element in an array.
+
+These problems can be solved using various techniques and algorithms, such as sorting, searching, and traversing. Practicing these problems will help you to gain a better understanding of Java arrays and improve your problem-solving skills.
+
+ TODO Strings:
+ Write a Java program to reverse a string.
+
+ Write a Java program to check if a string is a palindrome.
+
+ Write a Java program to count the number of vowels in a string.
+
+ Write a Java program to count the number of words in a string.
+
+ Write a Java program to remove all the white spaces from a string.
+
+ Write a Java program to find the length of the longest substring without repeating characters.
+
+ Write a Java program to find the first non-repeated character in a string.
+
+ Write a Java program to check if two strings are anagrams.
+
+ Write a Java program to check if a string contains only digits.
+
+ Write a Java program to check if a string contains a specific substring.
+
+ Write a Java program to find the longest palindrome substring in a string.
+
+ Write a Java program to find the second most frequent character in a string.
+
+ Write a Java program to reverse the order of words in a string.
+
+ Write a Java program to check if a string is a valid IP address.
+
+ Write a Java program to check if a string is a valid email address.
+
+ Solving these problems will help you to gain a better understanding of Java strings and improve your problem-solving skills. You can also try solving these problems using various string manipulation techniques and algorithms.
+
+ TODO FILE I/O
+ Write a Java program to read a file line by line and print its contents.
+
+ Write a Java program to read a file character by character and print its contents.
+
+ Write a Java program to count the number of words, lines, and characters in a file.
+
+ Write a Java program to copy the contents of one file to another.
+
+ Write a Java program to append text to an existing file.
+
+ Write a Java program to read a file and remove all the blank lines.
+
+ Write a Java program to read a file and remove all the lines that contain a specific word.
+
+ Write a Java program to find the longest line in a file.
+
+ Write a Java program to read a CSV file and print its contents.
+
+ Write a Java program to read an XML file and print its contents.
+
+ Write a Java program to read a binary file and print its contents.
+
+ Write a Java program to read a file and encrypt its contents.
+
+ Write a Java program to read a file and decrypt its contents.
+
+ Write a Java program to read a file and compress its contents.
+
+ Write a Java program to read a compressed file and decompress its contents.
+**/
 }
