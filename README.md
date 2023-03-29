@@ -1,5 +1,11 @@
 
 # daily_code
+
+## Take a look at the CodingProblmes Class to find problems that you can solve.
+
+## Java Basics
+
+
 Java is a general-purpose, object-oriented programming language that was first released by Sun Microsystems in 1995. It is designed to be platform-independent, meaning that code written in Java can run on any platform that has a Java Virtual Machine (JVM) installed.
 
 Here are some of the main features of Java:

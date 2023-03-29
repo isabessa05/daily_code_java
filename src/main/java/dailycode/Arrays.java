@@ -115,33 +115,6 @@ public static void findSecondGrande(int[] arr) {
 //          the elements of the array in sequence and don't need to know the current index of the element you're accessing.
 //          It's often used in place of a traditional for loop when you don't need to modify the array or access its indices.
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 
