@@ -1,5 +1,8 @@
 package dailycode;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class Arrays {
     public static void main(String[] args) {
         int[] arr = new int[5];
@@ -9,11 +12,19 @@ public class Arrays {
         arr[3] = 9;
         arr[4] = 1;
 
+        int[] arr2 = new int[5];
+        arr2[0] = 3;
+        arr2[1] = 7;
+        arr2[2] = 2;
+        arr2[3] = 9;
+        arr2[4] = 1;
+
 //        findSecondLargest(arr);
 //        findLargest(arr);
 //          sumArr(arr);
 //          minArr(arr);
-            reverse(arr);
+//            reverse(arr);
+            commonElements(arr, arr2 );
     }
 //    Write a Java program to find the second-largest element in an array.
 public static void findSecondLargest(int[] arr) {
@@ -87,6 +98,48 @@ public static void findSecondGrande(int[] arr) {
     }
 
 //    Write a Java program to find the common elements between two arrays
+    public static void commonElements(int[] arr, int[] arr2) {
+        //Create a HashSet to store the common elements
+        Set<Integer>  commonElements = new HashSet<>();
+        //Loop through arr and add all elements to the HashSet
+        for(int i : arr) {
+            commonElements.add(i);
+        }
+        // Loop through arr2 and check if each element is in the HashSet
+        for (int i : arr2) {
+            if(commonElements.contains(i)) {
+                System.out.println(i + " is a common element.");
+            }
+        }
+//          The enhanced for loop is a convenient way to iterate over an array, especially if you only need to access
+//          the elements of the array in sequence and don't need to know the current index of the element you're accessing.
+//          It's often used in place of a traditional for loop when you don't need to modify the array or access its indices.
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }

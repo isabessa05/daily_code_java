@@ -1,104 +1,8 @@
 package dailycode;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
 
 public class CodingProblems {
-    public static void main(String[] args) {
-//        findMaxOccurringChar("Hello");
-        countDuplicate("hello");
-//        printDuplicateChars("Yee yee");
-        mapCharacters("Alfredo");
 
-    }
-//        Todo: Find the maximum occurring character in a given String?
-     static void  findMaxOccurringChar(String str) {
-        int[] charCount = new int[256]; // assuming ASCII character set
-        //Count frequency of each char in any given string
-        // 'charAt' takes an integer index as an argument and returns the character at that index in the string.
-        for (int i = 0 ; i < str.length(); i++) {
-            charCount[str.charAt(i)]++;
-        }
-//        System.out.println(Arrays.toString(charCount)); // The charCount array counts the frequency of each char in the
-//        input str. It has a size of 256 and each element of the charCount array corresponds to a specific ASCII character,
-//        and the Index of the element represents the ASCII code for the character. For example, charCount[65] represents the count of the character
-//        'A', which has an ASCII code of 65.
-        for (int i = 0; i < charCount.length; i++) {
-            if (charCount[i] > 0) {
-                System.out.println("Character " + (char)i + " (ASCII code " + i + "): " + charCount[i]);
-            }
-        }
-        // Find the char with maximum frequency
-        int maxCount = 0;
-        char maxChar = ' ';
-        for (int i = 0; i < str.length(); i ++) {
-            if(charCount[str.charAt(i)] > maxCount) {
-                maxCount = charCount[str.charAt(i)];
-                maxChar = str.charAt(i);
-            }
-        }
-        System.out.println("The max occurring char is: " + maxChar);
-    }
-//    TODO Write a program that counts duplicate characters from a given string
-    static void countDuplicate(String str) {
-        int count;
-        System.out.println("The entered string is: " + str);
-        // convert str into character array
-        char str1[] = str.toCharArray();
-        // count frequency of each character present in the string
-        for(int i = 0; i < str1.length; i++) {
-            count = 1;
-            for(int j = i +1; j < str1.length; j++) {
-                if(str1[i] == str1[j] && str1[i] != ' ') {
-                    count++;
-                }
-            }
-            if(count > 1 )
-                System.out.println(str1[i]);
-        }
-    }
-
-
-//   TODO Use a Hash Map now that counts duplicate chars from a given string
-    static void printDuplicateChars(String str) {
-        char[] characters = str.toCharArray();
-        //build HashMap with character and number of times they appear in given String
-        Map<Character, Integer> charMap = new HashMap<Character, Integer>();
-        for (Character ch : characters) {
-            if (charMap.containsKey(ch)) {
-                charMap.put(ch, charMap.get(ch) +1);
-            } else {
-                charMap.put(ch, 1);
-            }
-        }
-        // iterate through HashMap to print all duplicate characters of given String
-        Set<Map.Entry<Character, Integer>> entrySet = charMap.entrySet();
-        System.out.printf("List of duplicate characters in String '%s' %n", str);
-        for (Map.Entry<Character, Integer> entry : entrySet) {
-            if (entry.getValue() > 1) {
-                System.out.printf("%s : %d %n", entry.getKey(), entry.getValue());
-            }
-        }
-    }
-//       HashMap that takes a String argument and returns a HasMap to stores the character-frequency pairs
-    public static Map<Character, Integer> mapCharacters(String str) {
-        Map<Character, Integer> charMap = new HashMap<>();
-        for (int i = 0; i < str.length(); i++) {
-            char ch = str.charAt(i);
-            if (ch == ' ') {
-                continue; // skip spaces
-            }
-            if (charMap.containsKey(ch)) {
-                int count = charMap.get(ch);
-                charMap.put(ch, count + 1); // increment character count
-            } else {
-                charMap.put(ch, 1); // add character to map
-            }
-        }
-        System.out.println(charMap); // print the hash map
-        return charMap;
-    }
 /**  TODO arrays
  *  Write a Java program to find the second largest element in an array.
 
@@ -195,5 +99,32 @@ These problems can be solved using various techniques and algorithms, such as so
  Write a Java program to read a file and compress its contents.
 
  Write a Java program to read a compressed file and decompress its contents.
+
+ TODO Popular Questions
+ FizzBuzz: Write a program that prints the numbers from 1 to 100. For multiples of three, print "Fizz" instead of the
+ number, and for multiples of five, print "Buzz." For numbers that are multiples of both three and five, print "FizzBuzz."
+
+ Palindrome: Write a program that checks whether a given string is a palindrome or not. A palindrome is a word, phrase,
+ number, or other sequence of characters that reads the same forward and backward.
+
+ Reverse a string: Write a program that takes a string as input and returns the same string in reverse order.
+
+ Fibonacci sequence: Write a program that prints the Fibonacci sequence up to a given number. The Fibonacci sequence
+ is a series of numbers in which each number is the sum of the two preceding ones, starting from 0 and 1.
+
+ Binary search: Write a program that implements the binary search algorithm to find a given number in a sorted array.
+
+ Linked List: Implement a singly linked list and perform common operations such as adding, removing, and traversing nodes.
+
+ Sorting algorithms: Implement one or more sorting algorithms such as Bubble Sort, Selection Sort, or Merge Sort to sort
+ an array of integers.
+
+ Find the maximum value: Write a program that finds the maximum value in an array of integers.
+
+ Anagram: Write a program that checks whether two given strings are anagrams of each other. An anagram is a word or
+ phrase formed by rearranging the letters of a different word or phrase.
+
+ Factorial: Write a program that calculates the factorial of a given number. The factorial of a non-negative integer
+ n is the product of all positive integers less than or equal to n.
 **/
 }
