@@ -1,7 +1,5 @@
 
-# daily_code
-
-## Take a look at the CodingProblmes Class to find problems that you can solve.
+ Take a look at the CodingProblmes Class to find problems that you can solve.
 
 ## Java Basics
 
